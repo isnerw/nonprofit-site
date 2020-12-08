@@ -6,7 +6,10 @@ function Footer() {
       <footer className='footer' style={FooterStyle}>
         <div className='footer-copyright text-center py-3'>
           © 2020 Copyright:
-          <a href='https://mdbootstrap.com/'> MDBootstrap.com</a>
+          <a href='http://blogs.evergreen.edu/phage/'>
+            {' '}
+            The Evergreen State College{' '}
+          </a>
         </div>
       </footer>
     </div>
