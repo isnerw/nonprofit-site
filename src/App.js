@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
 import Bio from './components/PhageTherapy/Bio';
 import Resources from './components/PhageTherapy/Resources';
 import BoardOfDirectors from './components/About/BoardOfDirectors';
 import ScientificAdvisoryboard from './components/About/ScientificAdvisoryBoard';
-import Donate from './components/Donate';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Donate from './components/Donate/Donate';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
