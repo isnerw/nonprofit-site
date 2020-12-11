@@ -24,6 +24,7 @@ const FooterStyle = {
   backgroundColor: '#F8F9FA',
   color: 'black',
   textAlign: 'center',
+  borderTop: '1px solid silver',
 };
 
 export default Footer;

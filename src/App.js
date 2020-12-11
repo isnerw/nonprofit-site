@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar/Navbar';
+import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Bio from './components/PhageTherapy/Bio';
 import Resources from './components/PhageTherapy/Resources';
@@ -11,13 +11,14 @@ import Donate from './components/Donate/Donate';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Navbar />
+        <Nav />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/phagetherapy/bio' component={Bio} />
