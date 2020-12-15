@@ -1,0 +1,10 @@
+.bod {
+  width: 80% !important;
+  height: 100%;
+  align-content: center;
+  /* border: 1px solid black; */
+}
+
+.bod h1 {
+  margin-top: 3rem;
+}
