@@ -1,59 +1,26 @@
 import React from 'react';
+import { Jumbotron, Container, Button } from 'react-bootstrap';
+
+import kitty from '../../images/kitty.jpg';
+import kitty2 from '../../images/kittens.jpg';
+import kitty3 from '../../images/cats.jpg';
+
+import './style.css';
 
 function Home() {
   return (
-    <div className='container'>
-      <div
-        id='carouselExampleIndicators'
-        className='carousel slide'
-        data-ride='carousel'
-      >
-        <ol className='carousel-indicators'>
-          <li
-            data-target='#carouselExampleIndicators'
-            data-slide-to='0'
-            className='active'
-          ></li>
-          <li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
-          <li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
-        </ol>
-        <div className='carousel-inner'>
-          <div className='carousel-item active'>
-            <img className='d-block w-100' src='...' alt='First slide' />
-          </div>
-          <div className='carousel-item'>
-            <img className='d-block w-100' src='...' alt='Second slide' />
-          </div>
-          <div className='carousel-item'>
-            <img className='d-block w-100' src='...' alt='Third slide' />
-          </div>
-        </div>
-        <a
-          className='carousel-control-prev'
-          href='#carouselExampleIndicators'
-          role='button'
-          data-slide='prev'
-        >
-          <span
-            className='carousel-control-prev-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='sr-only'>Previous</span>
-        </a>
-        <a
-          className='carousel-control-next'
-          href='#carouselExampleIndicators'
-          role='button'
-          data-slide='next'
-        >
-          <span
-            className='carousel-control-next-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='sr-only'>Next</span>
-        </a>
-      </div>
-    </div>
+    <Jumbotron fluid className='jumbo mt-4'>
+      <Container className='mt-5'>
+        <h1>Phage Biotics Research Foundation</h1>
+        <p>
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <p>
+          <Button variant='primary'>Learn more</Button>
+        </p>
+      </Container>
+    </Jumbotron>
   );
 }
 
