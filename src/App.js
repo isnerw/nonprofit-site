@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
-import Bio from './components/PhageTherapy/Bio';
-import Resources from './components/PhageTherapy/Resources';
-import BoardOfDirectors from './components/About/BoardOfDirectors';
-import ScientificAdvisoryboard from './components/About/ScientificAdvisoryBoard';
+import Bio from './components/PhageTherapy/Bio/Bio';
+import Resources from './components/PhageTherapy/Resources/Resources';
+import BoardOfDirectors from './components/About/BoardOfDirectors/BoardOfDirectors';
+import ScientificAdvisoryboard from './components/About/ScientificAdvisoryBoard/ScientificAdvisoryBoard';
 import Donate from './components/Donate/Donate';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';

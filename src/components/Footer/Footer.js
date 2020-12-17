@@ -1,29 +1,17 @@
 import React from 'react';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
-function Footer() {
+const FooterPage = () => {
   return (
-    <div>
-      <footer className='footer' style={FooterStyle}>
-        <div className='footer-copyright text-center py-3'>
-          © 2020 Copyright:
-          <a href='http://blogs.evergreen.edu/phage/'>
-            The Evergreen State College
-          </a>
-        </div>
-      </footer>
-    </div>
+    <MDBFooter color=' blue lighten-1' className='font-small pt-4 mt-4'>
+      <div className='footer-copyright text-center py-3'>
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright:{' '}
+          <a href='https://www.mdbootstrap.com'> MDBootstrap.com </a>
+        </MDBContainer>
+      </div>
+    </MDBFooter>
   );
-}
-
-const FooterStyle = {
-  // position: 'fixed',
-  // left: '0',
-  // bottom: '0',
-  width: '100%',
-  backgroundColor: '#343A40',
-  color: 'white',
-  textAlign: 'center',
-  borderTop: '1px solid silver',
 };
 
-export default Footer;
+export default FooterPage;

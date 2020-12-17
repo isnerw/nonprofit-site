@@ -1,5 +1,4 @@
-.jumbo {
-  margin: auto;
-  height: 80vh;
-  width: 75vw;
+#minimalistintro .view {
+  min-height: 100vh !important;
+  height: unset !important;
 }

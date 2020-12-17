@@ -1,8 +1,10 @@
-.bod {
-  width: 80% !important;
-  height: 100%;
-  align-content: center;
-  /* border: 1px solid black; */
+.bod-card {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bod-pic {
+  border-radius: 50%;
 }
 
 .bod h1 {
