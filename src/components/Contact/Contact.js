@@ -1,63 +1,3 @@
-// Customize this 'myform.js' script and add it to your JS bundle.
-// Then import it with 'import ContactPage from "./myform.js"'.
-// Finally, add a <ContactPage/> element whereever you wish to display the form.
-
-// import React from 'react';
-
-// export default class ContactPage extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.submitForm = this.submitForm.bind(this);
-//     this.state = {
-//       status: '',
-//     };
-//   }
-
-//   render() {
-//     const { status } = this.state;
-//     return (
-//       <form
-//         onSubmit={this.consoleLog}
-//         action='https://formspree.io/f/xleopqlq'
-//         method='POST'
-//       >
-//         <label>Name:</label>
-//         <input type='text' name='name' />
-//         <label>Email:</label>
-//         <input type='email' name='email' />
-//         <label>Subject:</label>
-//         <input type='text' name='Subject' />
-//         <label>Message:</label>
-//         <input type='text' name='message' />
-//         {status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}
-//         {status === 'ERROR' && <p>Ooops! There was an error.</p>}
-//       </form>
-//     );
-//   }
-
-//   submitForm(ev) {
-//     ev.preventDefault();
-//     const form = ev.target;
-//     const data = new FormData(form);
-//     const xhr = new XMLHttpRequest();
-//     xhr.open(form.method, form.action);
-//     xhr.setRequestHeader('Accept', 'application/json');
-//     xhr.onreadystatechange = () => {
-//       if (xhr.readyState !== XMLHttpRequest.DONE) return;
-//       if (xhr.status === 200) {
-//         form.reset();
-//         this.setState({ status: 'SUCCESS' });
-//       } else {
-//         this.setState({ status: 'ERROR' });
-//       }
-//     };
-//     xhr.send(data);
-//   }
-//   consoleLog() {
-//     console.log('Hello world!');
-//   }
-// }
-
 import React from 'react';
 import {
   MDBContainer,
@@ -65,7 +5,7 @@ import {
   MDBCol,
   MDBIcon,
   MDBBtn,
-  Button,
+  MDBAlert,
   MDBInput,
 } from 'mdbreact';
 
@@ -83,8 +23,8 @@ class ContactPage extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <MDBContainer className='contact-cont '>
-        <h2 className='h1-responsive font-weight-bold text-center mt-5 py-5 align-middle'>
+      <MDBContainer className='contact-cont'>
+        <h2 className='h1-responsive font-weight-bold text-center mt-5 py-5 align'>
           Contact us
         </h2>
         <p className='text-center w-responsive mx-auto pb-5'>
@@ -145,19 +85,21 @@ class ContactPage extends React.Component {
                   </div>
                 </MDBCol>
               </MDBRow>
-              {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+              {status === 'ERROR' && (
+                <MDBAlert color='warning'>Oops, there was an error!</MDBAlert>
+              )}
               {status === 'SUCCESS' ? (
-                <p>Thanks!</p>
+                <MDBAlert color='primary'>Thanks!</MDBAlert>
               ) : (
                 <div className='text-center text-md-left'>
-                  <Button
+                  <MDBBtn
                     color='primary'
                     size='md'
                     type='submit'
                     onSubmit={this.consoleLog}
                   >
                     Send
-                  </Button>
+                  </MDBBtn>
                 </div>
               )}
             </form>

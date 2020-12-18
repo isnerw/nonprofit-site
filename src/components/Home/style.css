@@ -1,4 +1,14 @@
-#minimalistintro .view {
-  min-height: 100vh !important;
-  height: unset !important;
+.home-container {
+  min-height: 77vh;
+}
+
+.home-container img {
+  max-height: 75vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-container img {
+    height: 45vh;
+    background: url('../../images/homeImg.jpg') !important;
+  }
 }

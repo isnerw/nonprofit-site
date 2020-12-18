@@ -7,7 +7,6 @@ import Bio from './components/PhageTherapy/Bio/Bio';
 import Resources from './components/PhageTherapy/Resources/Resources';
 import BoardOfDirectors from './components/About/BoardOfDirectors/BoardOfDirectors';
 import ScientificAdvisoryboard from './components/About/ScientificAdvisoryBoard/ScientificAdvisoryBoard';
-import Donate from './components/Donate/Donate';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
@@ -25,7 +24,6 @@ function App() {
           <Route exact path='/phagetherapy/resources' component={Resources} />
           <Route exact path='/about/board' component={BoardOfDirectors} />
           <Route exact path='/about/sab' component={ScientificAdvisoryboard} />
-          <Route exact path='/donate' component={Donate} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
         <Footer />

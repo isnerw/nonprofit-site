@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
 const FooterPage = () => {
   return (
-    <MDBFooter color=' blue lighten-1' className='font-small pt-4 mt-4'>
+    <MDBFooter color='stylish-color' className='font-small pt-4 mt-4'>
       <div className='footer-copyright text-center py-3'>
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{' '}
