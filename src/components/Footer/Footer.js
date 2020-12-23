@@ -7,7 +7,7 @@ const FooterPage = () => {
       <div className='footer-copyright text-center py-3'>
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{' '}
-          <a href='https://www.mdbootstrap.com'> MDBootstrap.com </a>
+          <a href='https://www.evergreen.edu/'> Evergreen State College </a>
         </MDBContainer>
       </div>
     </MDBFooter>
