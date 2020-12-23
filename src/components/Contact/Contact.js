@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import {
   MDBContainer,
   MDBRow,
@@ -16,12 +17,51 @@ class ContactPage extends React.Component {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
+      name: '',
+      email: '',
+      subject: '',
+      msg: '',
       status: '',
     };
   }
 
+  onChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+    console.log(this.state);
+  };
+
+  submitForm(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: 'SUCCESS' });
+      } else {
+        this.setState({ status: 'ERROR' });
+      }
+    };
+    xhr.send(data);
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+  }
+
   render() {
     const { status } = this.state;
+    if (status === 'SUCCESS') {
+      return <Redirect to={'/'} />;
+    }
     return (
       <MDBContainer className='contact-cont'>
         <h2 className='h1-responsive font-weight-bold text-center mt-5 py-5 align'>
@@ -47,6 +87,8 @@ class ContactPage extends React.Component {
                       name='name'
                       id='contact-name'
                       label='Your name'
+                      onChange={this.onChange}
+                      value={this.state.name}
                     />
                   </div>
                 </MDBCol>
@@ -57,6 +99,8 @@ class ContactPage extends React.Component {
                       name='email'
                       id='contact-email'
                       label='Your email'
+                      onChange={this.onChange}
+                      value={this.state.email}
                     />
                   </div>
                 </MDBCol>
@@ -69,6 +113,8 @@ class ContactPage extends React.Component {
                       name='subject'
                       id='contact-subject'
                       label='Subject'
+                      onChange={this.onChange}
+                      value={this.state.subject}
                     />
                   </div>
                 </MDBCol>
@@ -81,6 +127,8 @@ class ContactPage extends React.Component {
                       name='message'
                       id='contact-message'
                       label='Your message'
+                      onChange={this.onChange}
+                      value={this.state.message}
                     />
                   </div>
                 </MDBCol>
@@ -92,12 +140,7 @@ class ContactPage extends React.Component {
                 <MDBAlert color='primary'>Thanks!</MDBAlert>
               ) : (
                 <div className='text-center text-md-left'>
-                  <MDBBtn
-                    color='primary'
-                    size='md'
-                    type='submit'
-                    onSubmit={this.consoleLog}
-                  >
+                  <MDBBtn color='primary' size='md' type='submit'>
                     Send
                   </MDBBtn>
                 </div>
@@ -127,28 +170,6 @@ class ContactPage extends React.Component {
         </MDBRow>
       </MDBContainer>
     );
-  }
-
-  consoleLog() {
-    console.log('Hello world!');
-  }
-  submitForm(event) {
-    event.preventDefault();
-    const form = event.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader('Accept', 'application/json');
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: 'SUCCESS' });
-      } else {
-        this.setState({ status: 'ERROR' });
-      }
-    };
-    xhr.send(data);
   }
 }
 
