@@ -31,7 +31,7 @@ class NavbarPage extends Component {
     return (
       <MDBNavbar className='navbar' color='stylish-color' dark expand='md'>
         {/* <MDBContainer> */}
-        <MDBNavbarBrand className='navbrand' href='/'>
+        <MDBNavbarBrand className='navbrand ml-0 ml-md-5' href='/'>
           {/* <img src={logo} className='logo' /> */}
           PBRF
         </MDBNavbarBrand>
@@ -72,7 +72,10 @@ class NavbarPage extends Component {
             </MDBNavItem>
 
             <MDBNavItem>
-              <MDBNavLink className='white-text ' to='/contact'>
+              <MDBNavLink
+                className='white-text mr-0 mr-md-5 mr-xl-8'
+                to='/contact'
+              >
                 Contact
               </MDBNavLink>
             </MDBNavItem>
