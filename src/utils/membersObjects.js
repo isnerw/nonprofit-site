@@ -27,6 +27,41 @@ const membersObjects = [
     bio:
       'Dr. Wheat has more than 30 years of experience in clinical practice and teaching at a University of Washington affiliated residency training program (ABFM board certified). He graduated from Stanford University, received his MD from University of California, San Diego and did postgraduate residency training at the University of Utah.  Dr. Wheat’s current public health focus is antibiotic resistance and serves on the One Health Committee and the One Health Workgroup for the Washington State Department of Public Health, addressing the problem of antibiotic resistance from the combined perspective of human health, animal health and environmental health. He worked for the Department of Preventive Care for Group Health Cooperative for 12 years and has served on the Public Health Committee for the Washington Academy of Family Physicians since 2005. He published his research on fitness testing for cardiovascular disease prevention and is a coauthor of “Bacteriophage treatment of intransigent diabetic toe ulcers: a case series”. Journal of Wound Care, 7/16. ',
   },
+  {
+    name: 'Greg Bennett, DVM',
+    title: 'Board member',
+    image: '',
+    bio:
+      'Gregg is a private practice veterinarian who became interested in phage therapy through an intern in his practice who was also a student in Dr. Kutter’s lab, investigating phage active against Pseudomonas aeruginosa. This led to his role as clinical investigator in a CRDF-sponsored project between the Evergreen phage lab and the Eliava Institute in Georgia studying the efficacy of phage preparations against Pseudomonas infections in canine ears. Gregg received his B.A. from the Evergreen State College in 1980 and his D.V.M. from Washington State University in 1984. He is the owner of Tumwater Veterinary Hospital and is also a founding member and consulting veterinarian to Evergreen’s Institutional Animal Care and Use Committee.',
+  },
+  {
+    name: 'Jan Gleckler, Microbiologist',
+    title: 'Board member',
+    image: '',
+    bio:
+      'Jan graduated from Evergreen in 1990 with a BS focused on microbiology. Early in life, she had been a serious student of music & piano, but was equally caught up with a curiosity for biology and process. From 1966 -1970 she pursued her piano/Music degree at Cal State Long Beach, minoring in Biology, and then worked as a professional accompanist. After several years and a move from California to Washington, Jan was drawn back to her science interests, returning to school at Evergreen in 1988. There, she signed up for the full-time Molecule to Organism program, where T4 phage particularly caught her interest. Jan worked in the T4 Lab for a year while also a student, graduated in 1990, and joined the Northwest Indian Fisheries Commission Fish Health Lab as microbiologist. The Lab was set up in 1988 to provide services to the steelhead and salmon hatcheries of the 20 Native American tribes around Puget Sound and Washington Coast. In addition to the lab’s own preventative measures to protect the salmon from diseases, a collaboration developed between students from the Evergreen T4 lab and the NWIFC lab, working jointly on projects using phage to control fish pathogen growth. Jan retired in July 2013 but is now back working part time at Northwest Indian Fisheries to help through their busiest season. She has been on the Phagebiotics Foundation Board since its inception in 1997.',
+  },
+  {
+    name: 'Barbara Anderson, Microbiologist',
+    title: 'Board member',
+    image: '',
+    bio:
+      'Barbara received her BS in Microbiology in 1970 from Montana State University and then worked in the MSU viral lab of Al Fiscus PhD. Moving with her family to Idaho, she worked at the Weyerhauser Tree Nursery for Wayne Sinclair PhD on Douglas Fir mycorrhizsae and taught a microbiology course for the one year Environmental Technology option at Lewis Clark State College. After raising her, she went back to science at Tacoma Community College and The Evergreen State College. While working in the Evergreen Phage Lab, she learned Molecular Biology from visiting Russian and Georgian scientists and went on to manage the Phage Lab during a 1995-99 $950,000 NSF Collaborative Research at Undergraduate Institutions grant. Since then, she has worked for Dr. LeBris Quinn doing muscle cell tissue culture, molecular biology and biochemistry, originally at the American Lake VA, now moved to the Seattle Veterans Administration. She maintains an active interest in phage, attends as much of the biennial Evergreen International Phage Meetings as possible, and helped establish the original Evergreen PhageBiotics Foundation in 1997.',
+  },
+  {
+    name: 'Amy E. Cooper:',
+    title: 'Board member',
+    image: '',
+    bio:
+      'Amy is a graduate of the University of Kentucky with a degree in Chemical Engineering, and has worked for E.I. du Pont de Nemours (DuPont), since 1993 in a variety of manufacturing, technical service, sales, and marketing roles. She joined the board of the Phagebiotics Foundation in 2001, drawn to its work because she lived next door to Dr. Kutter, enjoyed long philosophical conversations about world health issues, became fascinated with phage, and traveled to Georgia to explore phage application there. Amy is currently the Technology Manager for Brand Licensing and Intellectual Property in DuPont’s Titanium Technologies business in Wilmington, Delaware, and brings her international experience with business agreements and intellectual property management along with her enthusiasm and critical eye to the Phagebiotics Foundation Board of Directors.',
+  },
+  {
+    name: 'Bob Blasdel',
+    title: 'Board member',
+    image: '',
+    bio:
+      ' Bob, an Evergreen phage lab graduate with a Master’s degree from Ohio State, has long been interested in the therapeutic applications of phages and has co-authored several articles on the subject with Dr. Kutter and other colleagues. He is now a doctoral student in the Laboratory of Gene Technology at KU Leuven in Belgium, studying the changing patterns of host and phage transcription during infection of Pseudomonas aeruginosa by each of the 6 quite different lytic Pseudomonas phage genera suitable for therapeutic applications, using the powerful new RNA-Seq method of analysis. Bob is very interested in the power of molecular genetics and the details of phage infection, viral ecology and evolution, the mysterious intersections between biofilm ecology and defense against phage in Pseudomonas, and the systems some phage use to eliminate their hosts’ gene expression while protecting their own. He also is our liaison with the European therapeutic phage community and participates actively in Board meetings on Skype',
+  },
 ];
 
 export default membersObjects;
