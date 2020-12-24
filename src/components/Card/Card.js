@@ -9,7 +9,7 @@ const Card = (props) => {
       <MDBCol md='3'>
         <img src={props.image} className='img-fluid py-3 bod-pic' alt='' />
         <h4 className='text-center'>{props.name}</h4>
-        <h5 className='text-center'>({props.title})</h5>
+        <h5 className='text-center'>{props.title}</h5>
       </MDBCol>
       <MDBCol className='py-3' md='9'>
         {props.bio}
