@@ -5,7 +5,7 @@ import Card from '../../Card/Card';
 import membersObject from '../../../utils/membersObjects';
 import './styles.css';
 
-const BoxPage = () => {
+const BoardOfDirectors = () => {
   const members = membersObject.map((member) => {
     return (
       <Card
@@ -27,4 +27,4 @@ const BoxPage = () => {
   );
 };
 
-export default BoxPage;
+export default BoardOfDirectors;
