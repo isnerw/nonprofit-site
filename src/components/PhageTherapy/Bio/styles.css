@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .bio-cont {
   min-height: 77vh;
 }
 
+.title {
+  font-size: 3.5rem;
+}
 .align-content-center img {
-  height: 18rem;
+  max-height: 20rem;
+}
+
+.img1 {
+  min-height: 17rem;
+  max-height: 26rem;
+  /* min-width: 26rem; */
+}
+
+.bio-cont p {
+  font-family: roboto;
 }
