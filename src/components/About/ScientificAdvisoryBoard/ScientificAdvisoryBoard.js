@@ -3,7 +3,6 @@ import { MDBContainer, MDBRow, MDBCol, MDBBox } from 'mdbreact';
 import Card from '../../Card/Card';
 
 import sabObject from '../../../utils/sabObject';
-import pic from '../../../images/cats.jpg';
 import './styles.css';
 
 const ScientificAdvisoryBoard = () => {
