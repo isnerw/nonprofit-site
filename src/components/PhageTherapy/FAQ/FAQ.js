@@ -13,15 +13,15 @@ function FAQ() {
         >
           FAQs
         </h1>
-        <h3>What are phage?</h3>
-        <p>
+        <h3 className='h1-responsive mb-2'>What are phage?</h3>
+        <p className='mb-4'>
           Phage are viruses which infect very specific host bacteria, not
           affecting other bacteria or human calls.
         </p>
 
-        <h3>How do phage work?</h3>
+        <h3 className='h1-responsive'>How do phage work?</h3>
 
-        <p>
+        <p className='mb-4'>
           Therapeutic phage are the predators which seek out and lyse and kill
           the specific bacteria which are that phage’s host. They do this by
           attaching to the cell wall, injecting the phage genetic material into
@@ -32,8 +32,10 @@ function FAQ() {
           out.
         </p>
 
-        <h3>How are phage different from antibiotics?</h3>
-        <p>
+        <h3 className='h1-responsive'>
+          How are phage different from antibiotics?
+        </h3>
+        <p className='mb-4'>
           Phage attach to specific receptors on the surface of their host
           bacterial cell and infect only those bacteria. Phage reproduce
           exponentially in the presence of the host bacteria and die off when
@@ -46,8 +48,10 @@ function FAQ() {
           of the organism.
         </p>
 
-        <h3>Why is there a crisis of antibiotic resistance?</h3>
-        <p>
+        <h3 className='h1-responsive'>
+          Why is there a crisis of antibiotic resistance?
+        </h3>
+        <p className='mb-4'>
           The problem is that drug companies are not investing their research
           funds to produce new antibiotics, and bacteria are very effective in
           developing resistance to current antibiotics. For an increasing number
@@ -57,19 +61,18 @@ function FAQ() {
           antibiotic era”.
         </p>
 
-        <h3>Are phage used therapeutically anywhere today?</h3>
-        <p>
+        <h3 className='h1-responsive'>
+          Are phage used therapeutically anywhere today?
+        </h3>
+        <p className='mb-4'>
           Phage a commonly used to treat infectious disease currently in the
           Republic of Georgia, Poland and Russia. Phage therapy is are used
           experimentally in the US, France, Begium, Switzerland, Columbia,
           Thailand…
         </p>
 
-        <h3>
-          What are the regulatory boundaries to the implementation of phage
-          therapy?
-        </h3>
-        <p>
+        <h3 className='h1-responsive'>What are the regulatory boundaires?</h3>
+        <p className='mb-4'>
           Phage therapy is not currently FDA approved for humans in the US.
           Phage can be used compassionately for patients who, for example, have
           failed recommended standard therapy and face an unfortunate treatment
