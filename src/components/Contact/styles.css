@@ -1,3 +1,7 @@
 .contact-cont {
   min-height: 79vh;
 }
+
+.contact-cont h2 {
+  font-size: 3.5rem;
+}
