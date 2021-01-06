@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav';
-import Home from './components/Home/Home';
-import Bio from './components/PhageTherapy/Bio/Bio';
+import Home from './pages/HomePage/HomePage';
+import PhageDescriptionPage from './pages/PhageDescriptionPage/PhageDescriptionPage';
 import FAQ from './components/PhageTherapy/FAQ/FAQ';
 import BoardOfDirectors from './components/About/BoardOfDirectors/BoardOfDirectors';
 import ScientificAdvisoryboard from './components/About/ScientificAdvisoryBoard/ScientificAdvisoryBoard';
@@ -20,7 +20,11 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/phagetherapy/bio' component={Bio} />
+          <Route
+            exact
+            path='/phagetherapy/bio'
+            component={PhageDescriptionPage}
+          />
           <Route exact path='/phagetherapy/faqs' component={FAQ} />
           <Route exact path='/about/board' component={BoardOfDirectors} />
           <Route exact path='/about/sab' component={ScientificAdvisoryboard} />

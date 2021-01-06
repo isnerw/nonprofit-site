@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+body,
+html {
+  image-rendering: -webkit-optimize-contrast;
+
+  height: 100%;
+}
+
+.bg {
+  background-image: url('../../../images/homeImg.jpg');
+  opacity: 0.8;
+  image-rendering: -webkit-optimize-contrast;
+
+  /* -webkit-filter: grayscale(20%);
+  filter: grayscale(20%); */
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: silver;
+}
+
+.bio-title {
+  font-family: 'Goldman', cursive;
+  font-size: 4rem;
+}
+
+.bio-btn {
+  color: silver !important;
+  opacity: 90%;
+}
+.bio-btn:hover {
+  opacity: 1;
+}
