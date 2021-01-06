@@ -19,9 +19,9 @@ const BoardOfDirectors = () => {
 
   return (
     <MDBContainer className='my-5'>
-      <h2 className='h1-responsive font-weight-bold text-center'>
+      <h1 className='board-title h1-responsive font-weight-bold text-center border-bottom border-dark pb-3'>
         Board Of Directors
-      </h2>
+      </h1>
       {members}
     </MDBContainer>
   );

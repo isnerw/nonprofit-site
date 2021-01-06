@@ -1,12 +1,5 @@
-/* .bod-card {
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-.bod-pic {
-  border-radius: 50%;
+.board-title {
+  font-size: 3.5rem;
 }
-
-.bod h1 {
-  margin-top: 3rem;
-} */
